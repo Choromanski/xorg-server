@@ -1,0 +1,191 @@
+ dpkg-buildpackage -rfakeroot -d -us -uc -S -sa --changes-option=-DDistribution=xenial
+dpkg-buildpackage: source package xorg-server
+dpkg-buildpackage: source version 2:1.18.4-0ubuntu0.8.1
+dpkg-buildpackage: source distribution UNRELEASED
+dpkg-buildpackage: source changed by Brian Choromanski <BrianChoromanski@gmail.com>
+ dpkg-source --before-build xorg-server-1.18.4
+ fakeroot debian/rules clean
+dh_listpackages: -s/--same-arch is deprecated; please use -a/--arch instead
+QUILT_PATCHES=debian/patches \
+	quilt --quiltrc /dev/null pop -a -R || test $? = 2
+No patch removed
+rm -rf .pc stampdir/patch
+dh_testdir
+rm -rf stampdir
+rm -f config.cache config.log config.status
+rm -f */config.cache */config.log */config.status
+rm -f conftest* */conftest*
+rm -rf autom4te.cache */autom4te.cache
+rm -rf build-*
+rm -f compile config.guess config.sub configure depcomp install-sh
+rm -f ltmain.sh missing INSTALL aclocal.m4 ylwrap
+rm -f include/do-not-use-config.h.in
+rm -f m4/lt*.m4 m4/libtool.m4
+find -name Makefile.in -delete
+rm -f test-driver
+dh_clean
+ dpkg-source -b xorg-server-1.18.4
+dpkg-source: warning: no source format specified in debian/source/format, see dpkg-source(1)
+dpkg-source: info: using source format '1.0'
+dpkg-source: info: building xorg-server using existing xorg-server_1.18.4.orig.tar.gz
+dpkg-source: info: building xorg-server in xorg-server_1.18.4-0ubuntu0.8.1.diff.gz
+dpkg-source: warning: ignoring deletion of file compile, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file test-driver, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file config.guess, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file aclocal.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ylwrap, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file install-sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file INSTALL, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file depcomp, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file configure, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file missing, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file config.sub, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ltmain.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file miext/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file miext/sync/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file miext/rootless/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file miext/damage/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file miext/shadow/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file m4/ltsugar.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file m4/ltoptions.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file m4/libtool.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file m4/lt~obsolete.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file m4/ltversion.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file Xi/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file Xext/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/dtrace/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file present/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file man/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file mi/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file include/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file include/do-not-use-config.h.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file test/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file test/xi2/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file test/xi1/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file damageext/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glamor/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file dri3/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file pseudoramiX/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glx/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file record/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file config/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file randr/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file dbe/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file xfixes/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file dix/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file os/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file render/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file exa/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/vfb/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/vfb/man/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xwin/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xwin/man/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xwin/glx/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xwin/winclipboard/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xquartz/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xquartz/mach-startup/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xquartz/bundle/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xquartz/man/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xquartz/pbproxy/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xquartz/GL/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xquartz/xpr/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/dri/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/parser/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/doc/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/ramdac/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/man/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/vgahw/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/utils/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/utils/man/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/utils/gtf/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/utils/cvt/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/glamor_egl/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/dixmods/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/modes/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/dri2/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/dri2/pci_ids/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/i2c/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/x86emu/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/drivers/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/drivers/modesetting/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/ddc/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/shadowfb/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/loader/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/vbe/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/exa/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/exa/man/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/common/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/fbdevhw/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/fbdevhw/man/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/int10/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/os-support/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/os-support/linux/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/os-support/bsd/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/os-support/solaris/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/os-support/bus/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/os-support/stub/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/os-support/misc/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xfree86/os-support/hurd/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/kdrive/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/kdrive/linux/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/kdrive/ephyr/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/kdrive/ephyr/man/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/kdrive/fbdev/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/kdrive/fake/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/kdrive/src/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xnest/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xnest/man/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/xwayland/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/dmx/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/dmx/doxygen/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/dmx/examples/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/dmx/doc/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/dmx/man/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/dmx/glxProxy/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/dmx/config/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/dmx/config/man/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file hw/dmx/input/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file composite/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file xkb/Makefile.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file fb/Makefile.in, use --include-removal to override
+dpkg-source: warning: file xorg-server-1.18.4/.dir-locals.el has no final newline (either original or modified version)
+dpkg-source: warning: the diff modifies the following upstream files: 
+ .dir-locals.el
+ ChangeLog
+ config/dbus-api
+ damageext/damageext.h
+ doc/c-extensions
+ dri3/dri3int.h
+ fix-miregion
+ fix-miregion-private
+ fix-patch-whitespace
+ fix-region
+ hw/kdrive/Xkdrive.man
+ hw/kdrive/fbdev/Xfbdev.man
+ hw/xfree86/os-support/shared/platform_noop.c
+ hw/xquartz/GL/glcontextmodes.c
+ hw/xquartz/GL/glcontextmodes.h
+ hw/xwin/winclipboard/internal.h
+ randr/rrcrtc.c
+ xkb/XKM_file_format.txt
+dpkg-source: info: use the '3.0 (quilt)' format to have separate and documented changes to upstream files, see dpkg-source(1)
+dpkg-source: info: building xorg-server in xorg-server_1.18.4-0ubuntu0.8.1.dsc
+ dpkg-genchanges -S -sa -DDistribution=xenial >../xorg-server_1.18.4-0ubuntu0.8.1_source.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build xorg-server-1.18.4
+dpkg-buildpackage: source-only upload (original source is included)
+Now running lintian...
+W: xorg-server source: binary-nmu-debian-revision-in-source 2:1.18.4-0ubuntu0.8.1
+W: xorg-server source: patch-system-but-direct-changes-in-diff .dir-locals.el and 17 more
+W: xorg-server source: out-of-date-standards-version 3.9.6 (current is 3.9.7)
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile xorg-server_1.18.4-0ubuntu0.8.1.dsc 67B89CBC
+
+ signfile xorg-server_1.18.4-0ubuntu0.8.1_source.changes 67B89CBC
+
+Successfully signed dsc and changes files
