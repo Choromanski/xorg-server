@@ -1,11 +1,11 @@
 -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA1
+Hash: SHA512
 
 Format: 1.0
 Source: xorg-server
 Binary: xserver-xorg-core, xserver-xorg-core-udeb, xserver-xorg-dev, xdmx, xdmx-tools, xnest, xvfb, xserver-xephyr, xserver-xorg-core-dbg, xserver-common, xmir, xserver-xorg-xmir, xorg-server-source, xwayland, xserver-xorg-legacy
 Architecture: any all
-Version: 2:1.18.4-0ubuntu0.8.1
+Version: 2:1.18.4-0ubuntu0.8
 Maintainer: Ubuntu X-SWAT <ubuntu-x@lists.ubuntu.com>
 Homepage: http://www.x.org/
 Standards-Version: 3.9.6
@@ -30,29 +30,28 @@ Package-List:
  xwayland deb x11 optional arch=linux-any
 Checksums-Sha1:
  02c4562673e9b2508a8f6d73e2690113fd410938 8346449 xorg-server_1.18.4.orig.tar.gz
- 6e53ab8efc9880c28307768badc408f6cc5269c9 327950 xorg-server_1.18.4-0ubuntu0.8.1.diff.gz
+ e4653a5c6effc8bca10fab683a66b7d45cec9b45 323913 xorg-server_1.18.4-0ubuntu0.8.diff.gz
 Checksums-Sha256:
  4ba0e6c2c96650f1d1606572196143054005eb88d31c33b15a81d50886f26713 8346449 xorg-server_1.18.4.orig.tar.gz
- 94ae1f69239ab55f58777e29e25683dd42a5a7f5f9f9db9461985c2a81158d04 327950 xorg-server_1.18.4-0ubuntu0.8.1.diff.gz
+ bc2ae3f1f64796688f1c0c4166fc04a5a0a196936dbda3f753bdb8b5508dab68 323913 xorg-server_1.18.4-0ubuntu0.8.diff.gz
 Files:
  a36fcc49260582a4edb218919add37c7 8346449 xorg-server_1.18.4.orig.tar.gz
- db52357818df7f8096b0c30cb986f137 327950 xorg-server_1.18.4-0ubuntu0.8.1.diff.gz
+ b0c1cf260cddea4c978a29b3a3a0b8c6 323913 xorg-server_1.18.4-0ubuntu0.8.diff.gz
 Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1
 
-iQIcBAEBAgAGBQJasaYHAAoJEEwCYa9nuJy80poP/A/g8OuvJ95j9aCMhYJrLZF1
-/GFCwsvMrUtBGuAy7kjQnZhiow1qxEyrs2nqcXAGUFhg7I/1OHV8TKovVlmk+Bj4
-MKCYLAIkTKQ8D7qDLzWbYHqpAoB+cBNdnQPoeZX/eH8g80mZGb64Rhj9tn3UstG6
-CtxGHfVfLKnci/JVnXYaakKOEZd6vzi6sq5VKNS95PLG0Y+GZEXv2MUA+wpzyVdy
-ZgvOFRawV9c2FBQBnuHNWNcS90P0LAo6YiXiqCj3hYso7ksHAZwTh3PPdsejwzpU
-UbxvX5ECq6+f71UqxbDxocCSZcxzwX9Gmba1kUoEOQJqg67RUqw6gkX683D8+4b6
-qj57brP5MgDfn39vqsS+q4qLKQyaXyRtgq+7ChKh6wvuJPpwPGmGleM8k6B1N2xv
-HpU7QkOCjV1CqxgxgRx1wvAqhstnLUN82Inc/J10To42BxYxWFTtvK6ZEmJZSTOJ
-Hsza9iFfa14sjHNLCYbt6oTch0f0U3lad5lZQ0AXQCfLLcwUvXd19a3IaFmzd9Ja
-xz+8G6CCWiCKNi1Tk2dIeprr19xES0Se4JlYdiR2ueyOrYoxv05TpuwqAtX/YoZd
-VIcSOsc/vndRlZtZVqcVWvqvHmct82dfL6efl/4EEnu6DFFzZjhkum5eSLkDpqZY
-ycPYugyoEOG6pL4o2KSF
-=UuI+
+iQIzBAEBCgAdFiEEdS3ifE3rFwGbS2Yjy3AxZaiJhNwFAlttUM0ACgkQy3AxZaiJ
+hNyatQ/+O5MyrI6nDNFOgr/BeaPjYMSNbjTlvgZ4CI4l/f6SQYqFP8FwaawN+S/J
+RCh6TsrRMuMczGvgv095CngfrVR9Rb2Bt/t/TTFBs9K2BUT7+syX3gDZzvrUReK4
+h/LokoiMN2EB0fq+b1GBquBBoT7vmMqvnRsGXSyZiPw3Jh1Rwog388/67IxJTKv6
+OUWQXAiSuFYo7mgm63tsuFdi6Js6pKExN9kqJMebp1p1667UI9nLPRzY07MFYGK9
+PozjxopDR72i7kIxbc/HuyYlL9iOh0NaKI43yEkqv3NPGQss7J7OG1+J90oSfEG6
+dLVrMgtyu93RgUPooJs8g1tb5f3NLNKF+hYo3gBW5KSbI35gHvRLpc4kOgU2+0kf
+8Ub3VvRcBevLRSHvUuPug1RfxCGmHdVCTR1Fh1Ap+Qaj40jU71E04b82+9dbSncu
+v4xmGzRTJCmrkTaD0O1yoLygI3cklHNMv3W+87tKqEiRpxXGMOF8tSiD/hRaqnUE
+T9Vnec/Z25WIip26Z8memFl0L4P3Qb6zGZf6w6sOX5oYR/cPWMkx6fGMgkEV7AhT
+ckoH66YzIQ2spaL2nGupv1g7dThx/h8kFY/atTumyDIhd29xjqLmPIF2l08uHrwe
+Xkjb38Q/T7QE73QrqHEeuqUBvYn6uzJHuqZl7JD7/ievv1SWQac=
+=JJUh
 -----END PGP SIGNATURE-----

@@ -67,3 +67,4 @@ CVE-2017-12183.patch
 CVE-2017-12184-12187.patch
 os_big_requests.patch
 xkb_escape_fix.patch
+glx-do-not-pick-srgb-config-for-32bit-rgba-visual.diff

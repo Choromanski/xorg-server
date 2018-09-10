@@ -2,11 +2,11 @@
 Hash: SHA1
 
 Format: 1.8
-Date: Tue, 20 Mar 2018 20:22:55 -0400
+Date: Mon, 10 Sep 2018 17:31:38 -0400
 Source: xorg-server
 Binary: xserver-xorg-core xserver-xorg-core-udeb xserver-xorg-dev xdmx xdmx-tools xnest xvfb xserver-xephyr xserver-xorg-core-dbg xserver-common xmir xserver-xorg-xmir xorg-server-source xwayland xserver-xorg-legacy
 Architecture: source
-Version: 2:1.18.4-0ubuntu0.8.1
+Version: 2:1.18.4-0ubuntu0.9.1
 Distribution: xenial
 Urgency: medium
 Maintainer: Ubuntu X-SWAT <ubuntu-x@lists.ubuntu.com>
@@ -28,38 +28,38 @@ Description:
  xvfb       - Virtual Framebuffer 'fake' X server
  xwayland   - Xwayland X server
 Changes:
- xorg-server (2:1.18.4-0ubuntu0.8.1) UNRELEASED; urgency=medium
+ xorg-server (2:1.18.4-0ubuntu0.9.1) UNRELEASED; urgency=medium
  .
    * Non-maintainer upload.
    * Patch for xorg-server that resolves issue with cursor being confined when using --scale parameter on xrandr
 Checksums-Sha1:
- 5a3fee098d6bbab70274e909de0397a151a18303 5155 xorg-server_1.18.4-0ubuntu0.8.1.dsc
+ 834681473228009fc143c6fbdf062cccaffa154d 5155 xorg-server_1.18.4-0ubuntu0.9.1.dsc
  02c4562673e9b2508a8f6d73e2690113fd410938 8346449 xorg-server_1.18.4.orig.tar.gz
- 6e53ab8efc9880c28307768badc408f6cc5269c9 327950 xorg-server_1.18.4-0ubuntu0.8.1.diff.gz
+ 7a92a2cc88c6d348350f8769ba90cf0c3115f8a6 328813 xorg-server_1.18.4-0ubuntu0.9.1.diff.gz
 Checksums-Sha256:
- eda6144318b1091329eab4c88e985756a26d9997fbf657a0e61684703bd8af8d 5155 xorg-server_1.18.4-0ubuntu0.8.1.dsc
+ a57d02053386aa309ef0ce8f99fb927d06f1c12ac7a1d2cfdc82b6538107ed5d 5155 xorg-server_1.18.4-0ubuntu0.9.1.dsc
  4ba0e6c2c96650f1d1606572196143054005eb88d31c33b15a81d50886f26713 8346449 xorg-server_1.18.4.orig.tar.gz
- 94ae1f69239ab55f58777e29e25683dd42a5a7f5f9f9db9461985c2a81158d04 327950 xorg-server_1.18.4-0ubuntu0.8.1.diff.gz
+ 464004eecf4d9d646f8aff01bb0e45b26202dfe495b760b4266029ac3212a353 328813 xorg-server_1.18.4-0ubuntu0.9.1.diff.gz
 Files:
- 86cd9ddaebe0ca74556c174a7cf5f9d0 5155 x11 optional xorg-server_1.18.4-0ubuntu0.8.1.dsc
+ bff713db928eecb7ed29183ce391ffdd 5155 x11 optional xorg-server_1.18.4-0ubuntu0.9.1.dsc
  a36fcc49260582a4edb218919add37c7 8346449 x11 optional xorg-server_1.18.4.orig.tar.gz
- db52357818df7f8096b0c30cb986f137 327950 x11 optional xorg-server_1.18.4-0ubuntu0.8.1.diff.gz
+ bf2c275cdac638452d1cba1778020bca 328813 x11 optional xorg-server_1.18.4-0ubuntu0.9.1.diff.gz
 Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQIcBAEBAgAGBQJasaYLAAoJEEwCYa9nuJy8GAgP/0qXAJHlFwtGGads7K9KsDYQ
-mL35nT7a7Zo68RyoWxq+NhIOZfUmjki5K/LYtaKHoHafmNkVOS7kQtEuUBih79P3
-0FDcehg5IOjFthbfqryTTL+6HNEfZkIhLGLDKXLyERU1AOjy6cpckTEp2qbiM3CV
-3xbw1+cLKDk1isry7HCrCSox/NmuTNMOzM+fHrMpO+AIAKkvnqbka9qzyqUc2Up5
-02+Ya0cWkLuWFwMtHgoH0dyXjlFkDcKHJN8/rnwv/e6nuNUhRDT0MEnlU8DPRWjk
-OnOkZfUPGBCdFLIy+RnO5tgNvX0iVlXbtue5dQHzMwY91R9Nzz2Tyx7+Cqu9k/BZ
-b4eh7CGCSoG7t++dM+Z2MpZG9JTiHyxV70GpLWXd+VQQmo80zhJuJpu8HjwDYnCq
-Z44zI+2JejUV9Pv1KTRHkRoXCRSDh9Kgiz/ricCpmgvwzBJPj1hIdRSKwITYLFou
-z//ARjJfVM+HdxwoBle2Wk37cfgd12jxnzgH+yo6jCMkuS+XUM+difEsmMVNZRhK
-PagdSyVWMHMYyLooAVMtv4IoIiYlLqa1QpDUwzZ5C9B25rotlrJm+vkjTDO88BfR
-p+w6/iGbus0NM0tgLoonp+dPVCWqFovIyRU9HiLz75J0U9gRvbgQmHbVTrqaIOAz
-JfnzPNT9PVr/rWGigkmM
-=Ri0v
+iQIcBAEBAgAGBQJbluMXAAoJEEwCYa9nuJy8ZZcP/jZzfH8CNtzdIVVU+XH4ta/v
+bHqGXobTRgn7RAbeDQ+pRhOB7uUFOZMDDTqZv5abgoM1K6aA46z07JeH0ZctT0ms
+tkXRAVLEEI2IuZySZysAFn3p8Iuz1p518/dI4+Esx3GC5c5ktwWLD48r8BEJmPIl
+jj+997gJ/N7tDFRZLXzL7Or+hY+9DSmGLCzviQqDoP+T62RiY80z6irBooaww2i0
+txCBg9+wXBf8tt13aTu0PPSl1ADx+pYrZ1mcwdN41tpZYvVEnpjnYCXPfgFI83nB
+byS2YC2PJXOxbbW088VnstdQKc0phgoGTq+xk/QPBxtMj8FFbs2XLS6ikJmgcIvb
+p3xs7GEIfBWnAWzxgQ8Da/3cHiN/GJ8mzvKoubMjoGxBcZNsIKhHWlLjiIaKbkWG
+P9JpgieUGeMDgG5JdJhBMgzYGuhJOiFrq0adUh+m20aczpWiaCf5DABpq0x09NyV
+h6EQxw7H0c1qGhT7DffLGSLQi0X+6MKTYHYxPjp5pOszhJYlX+YIAiXIlU+NrU2K
+owlBOpitDi6j7HnNhE5RT8qgcTpas/ST2i0kD3URNZByKRg5FY5zQLsFSWzspkP4
+7HERUoo8rJOUjHqorwW7e3uB0mb5kM2GDjSflyX+k8d7pknTnomZlz4mxwg7bSpY
+/zGHsjS1GfjB1rMBBHGw
+=e8C5
 -----END PGP SIGNATURE-----

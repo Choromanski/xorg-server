@@ -1,9 +1,16 @@
-xorg-server (2:1.18.4-0ubuntu0.8.1) UNRELEASED; urgency=medium
+xorg-server (2:1.18.4-0ubuntu0.9.1) UNRELEASED; urgency=medium
 
   * Non-maintainer upload.
-  * Patch for xorg-server that resolves issue with cursor being confined when using --scale parameter on xrandr 
+  * Patch for xorg-server that resolves issue with cursor being confined when using --scale parameter on xrandr
 
- -- Brian Choromanski <BrianChoromanski@gmail.com>  Tue, 20 Mar 2018 20:22:55 -0400
+ -- Brian Choromanski <BrianChoromanski@gmail.com>  Mon, 10 Sep 2018 17:31:38 -0400
+
+xorg-server (2:1.18.4-0ubuntu0.8) xenial; urgency=medium
+
+  * glx-do-not-pick-srgb-config-for-32bit-rgba-visual.diff: Fix a
+    regression with newer mesa. (LP: #1780664)
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Sat, 14 Jul 2018 01:28:30 +0300
 
 xorg-server (2:1.18.4-0ubuntu0.7) xenial-security; urgency=medium
 
